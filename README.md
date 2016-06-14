@@ -7,8 +7,10 @@
 
 #### Prototypal Inheritance:
 > Allows us share share and reuse code between Objects	
-	
-##	What are we building?
+<br><br>
+
+
+##	 What are we building:
 
 #### We have a client with an Animal Santuary. 
 * They want us to build software to keep track of the animals.  
