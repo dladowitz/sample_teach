@@ -126,26 +126,39 @@ function Tiger(name, enclosure){
 }
 ```
 
-* With Inheritance we can DRY this up. 
+### A Tiger and Lion can inhert properties of an Animal.  
 
-|Animal        |
-________       |
-|name          |
-|enclosure     |
-|species       |
-|dangerLevel   |
-|nocturnal     | 
-|numberOfLegs  |
-|feedingRoutine|
+Animal:
+```javascript
+function Animal(name, enclosure){
+	this.name = name;	
+	this.enclosure = enclosure;
+	this.nocturnal = false;
+	this.numberOfLegs = 4;
+}
+```
+Lion:
+```javascript
+function Lion(name){
+	this.name = name;	
+	this.species = "Lion";
+	this.dangerLevel = 9;
+	this.feedingRoutine = function(){
+		console.log("20Lbs of beef, three times a day. Feed through fence.");
+	}
+}
+```
+
+But we need to setup the inheritance:
+```javascript 
+Lion.prototype = new Animal():
+```
+
+Now all the properties on **Animal** are also on **Lion**
+
+<br><br>
+### [Cool, but lets see it for reals](https://repl.it/C2A9/2)
+On in a live session
 
 
-|Tiger         |
-________       |
-|name          |
-|enclosure     |
-|species       |
-|dangerLevel   |
-|nocturnal     | 
-|numberOfLegs  |
-|feedingRoutine|
 
