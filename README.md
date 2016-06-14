@@ -39,7 +39,7 @@ var Simba = {
 	species: "Lion", 
 	dangerLevel: 9,	
 	nocturnal: false, 
-	numLegs: 4,
+	numberOfLegs: 4,
 	feedingRoutine: function(){
 		console.log("20Lbs of beef, three times a day. Feed through fence.")
 	}
@@ -48,8 +48,10 @@ var Simba = {
 
 * But...... thats gonna get really crazy when we have dozens or hundreds of animals to create and maintain. 
 
-#### Another Way: Constructors.
-Constructors let us create  blueprint for a type of object(or animal). We can then use the blue print over and over again. 
+<br><br>
+______________________________________________________________________________
+## Another Way: Constructors.
+Constructors let us create  blueprint for a type of object (here an animal). We can then use the blue print over and over again. 
 
 A Constructor for a Lion looks like this:
 
@@ -59,22 +61,91 @@ function Lion(name){
 	this.species = "Lion";
 	this.dangerLevel = 9;
 	this.nocturnal = false;
-	this.numLegs = 4;
+	this.numberOfLegs = 4;
 	this.feedingRoutine = function(){
 		console.log("20Lbs of beef, three times a day. Feed through fence.");
 	}
 }
 ```	
 
-Then if we want to create a few Lions quickly we do:
+Then if we want to create a few Lions quickly we can do it in one line:
 ```javascript
 var simba = new Lion("Simba");
 var leo = new Lion("Leo");
 ```
 Now we can use these objects (Lions)
 ```javascript
-console.log simba.name //Output -> "Simba"
-console.log leo.name //Output -> "Leo"
+console.log( simba.name ) //Output -> "Simba"
+console.log( leo.dangerLevel ) //Output -> 9
+```
+<br><br>
+### [So lets see a live demo](https://repl.it/C16y/1)
+[![](http://cdn.churchm.ag/wp-content/uploads/2011/10/replit-edit-620x431.png)](https://repl.it/C16y/1)
+
+<br><br>
+
+### [Your Turn](https://repl.it/C1xn/5)
+
+
+Follow the link and create a Constructor for a Tiger and Owl.
+
+<br><br>
+______________________________________________________________________________
+## DRY it up with Inheritance:
+
+* So now we can easily create a bunch of new animals in a single line. 
+* But looking at the Lion and Tiger constructor we see a lot of shared code. 
+
+Lion:
+```javascript
+function Lion(name, enclosure){
+	this.name = name;
+	this.enclosure = enclosure;
+	this.species = "Lion";
+	this.dangerLevel = 9;
+	this.nocturnal = false;
+	this.numberOfLegs = 4;
+	this.feedingRoutine = function(){
+		console.log("20Lbs of beef, three times a day. Feed through fence.");
+	}
+}
 ```
 
- 
+Tiger:
+```javascript
+function Tiger(name, enclosure){
+	this.name = name;	
+	this.enclosure = enclosure;	
+	this.species = "Tiger";
+	this.dangerLevel = 8;
+	this.nocturnal = false;
+	this.numberOfLegs = 4;
+	this.feedingRoutine = function(){
+		console.log("10Lbs of beef, twice times a day.");
+	}
+}
+```
+
+* With Inheritance we can DRY this up. 
+
+|Animal        |
+________       |
+|name          |
+|enclosure     |
+|species       |
+|dangerLevel   |
+|nocturnal     | 
+|numberOfLegs  |
+|feedingRoutine|
+
+
+|Tiger         |
+________       |
+|name          |
+|enclosure     |
+|species       |
+|dangerLevel   |
+|nocturnal     | 
+|numberOfLegs  |
+|feedingRoutine|
+
