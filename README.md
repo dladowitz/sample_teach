@@ -37,6 +37,7 @@ We could use objects like we've seen before:
 var Simba = {
 	name: "Simba",
 	species: "Lion", 
+	dangerLevel: 9,	
 	nocturnal: false, 
 	numLegs: 4,
 	feedingRoutine: function(){
@@ -45,5 +46,35 @@ var Simba = {
 }
 ```	
 
+* But...... thats gonna get really crazy when we have dozens or hundreds of animals to create and maintain. 
+
+#### Another Way: Constructors.
+Constructors let us create  blueprint for a type of object(or animal). We can then use the blue print over and over again. 
+
+A Constructor for a Lion looks like this:
+
+```javascript
+function Lion(name){
+	this.name = name;	
+	this.species = "Lion";
+	this.dangerLevel = 9;
+	this.nocturnal = false;
+	this.numLegs = 4;
+	this.feedingRoutine = function(){
+		console.log("20Lbs of beef, three times a day. Feed through fence.");
+	}
+}
+```	
+
+Then if we want to create a few Lions quickly we do:
+```javascript
+var simba = new Lion("Simba");
+var leo = new Lion("Leo");
+```
+Now we can use these objects (Lions)
+```javascript
+console.log simba.name //Output -> "Simba"
+console.log leo.name //Output -> "Leo"
+```
 
  
