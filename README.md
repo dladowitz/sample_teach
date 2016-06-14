@@ -8,7 +8,9 @@
 #### Prototypal Inheritance:
 > Allows us share share and reuse code between Objects
 
+
 <br><br>
+______________________________________________________________________________
 ##	 What are we building:
 
 #### We have a client with an [Animal Santuary](http://blackjaguarwhitetiger.org/visit-us/). 
@@ -20,3 +22,28 @@
 ![](http://i.imgur.com/4wlZKb3.jpg)
 
 * PS, I'm pretty sure this guy is gonna die soon. 
+
+<br><br>
+______________________________________________________________________________
+## What we need to model:
+* 12 Lions
+* 15 Tigers
+* 2 House Cats
+* 2 Owls
+
+#### One Way
+We could use objects like we've seen before:
+```javascript
+var Simba = {
+	name: "Simba",
+	species: "Lion", 
+	nocturnal: false, 
+	numLegs: 4,
+	feedingRoutine: function(){
+		console.log("20Lbs of beef, three times a day. Feed through fence.")
+	}
+}
+```	
+
+
+ 
