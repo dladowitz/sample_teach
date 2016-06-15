@@ -86,7 +86,7 @@ console.log( simba.name ) //Output -> "Simba"
 console.log( leo.dangerLevel ) //Output -> 9
 ```
 <br><br>
-### [So lets see a live demo](https://repl.it/C16y/5)
+### [So lets see a live demo](https://repl.it/C16y/9)
 [![](http://cdn.churchm.ag/wp-content/uploads/2011/10/replit-edit-620x431.png)](https://repl.it/C16y/5)
 
 <br><br>
