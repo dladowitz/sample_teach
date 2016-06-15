@@ -105,43 +105,45 @@ ______________________________________________________________________________
 
 Lion:
 ```javascript
-function Lion(name, enclosure){
-	this.name = name;
-	this.enclosure = enclosure;
+function Lion(name){
+	this.name = name;	
 	this.species = "Lion";
-	this.dangerLevel = 9;
-	this.nocturnal = false;
+	this.family = "Felidae";
+	this.dangerLevel = 9;	
 	this.numberOfLegs = 4;
+	this.carinvore = true;
+	this.tail = true;
 	this.feedingRoutine = function(){
-		console.log("20Lbs of beef, three times a day. Feed through fence.");
+		console.log("20Lbs of beef, three times a day. Feed through fence.")
 	}
 }
 ```
 
 Tiger:
 ```javascript
-function Tiger(name, enclosure){
+function Tiger(name){
 	this.name = name;	
-	this.enclosure = enclosure;	
 	this.species = "Tiger";
-	this.dangerLevel = 8;
-	this.nocturnal = false;
+	this.family = "Felidae";
+	this.dangerLevel = 8;	
 	this.numberOfLegs = 4;
+	this.carinvore = true;
+	this.tail = true;
 	this.feedingRoutine = function(){
 		console.log("10Lbs of beef, twice times a day.");
 	}
 }
 ```
 
-### A Tiger and Lion can inhert properties of an Animal.  
+### A Lion and Tiger can inhert properties of a Feline.  
 
-Animal:
+Feline:
 ```javascript
-function Animal(name, enclosure){
-	this.name = name;	
-	this.enclosure = enclosure;
-	this.nocturnal = false;
+function Feline(){
+	this.family = "Felidae";
 	this.numberOfLegs = 4;
+	this.carinvore = true;
+	this.tail = true;
 }
 ```
 Lion:
@@ -158,18 +160,18 @@ function Lion(name){
 
 But we need to setup the inheritance:
 ```javascript 
-Lion.prototype = new Animal():
+Lion.prototype = new Feline():
 ```
 
-Now all the properties on **Animal** are also on **Lion**
+Now all the properties on **Feline** are also on **Lion**
 
 <br><br>
-### [Cool, but lets see it for reals](https://repl.it/C2A9/2)
+### [Cool, but lets see it for reals](https://repl.it/C2A9/5)
 On in a live session
 
 
 
-### [And your turn again](https://repl.it/C2BN/0)
+### [And your turn again](https://repl.it/C2BN/2)
 Lets create an Animal and have Tigers and Owls inherit from them.
 
 
