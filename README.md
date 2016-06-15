@@ -36,6 +36,7 @@ ______________________________________________________________________________
 
 #### One Way
 We could use objects like we've seen before:
+
 ```javascript
 var simba = {
 	name: "Simba",
@@ -76,11 +77,13 @@ function Lion(name){
 ```	
 
 Then if we want to create a few Lions quickly we can do it in one line:
+
 ```javascript
 var simba = new Lion("Simba");
 var leo = new Lion("Leo");
 ```
 Now we can use these objects (Lions)
+
 ```javascript
 console.log( simba.name ) //Output -> "Simba"
 console.log( leo.dangerLevel ) //Output -> 9
@@ -94,7 +97,7 @@ console.log( leo.dangerLevel ) //Output -> 9
 ### [Your Turn](https://repl.it/C1xn/10)
 
 
-Follow the link and create a Constructor for a Tiger and Owl.
+Follow the link and create a Constructor for a Tiger.
 
 <br><br>
 ______________________________________________________________________________
@@ -152,7 +155,7 @@ function Feline(){
 	this.tail = true;
 }
 ```
-Lion:
+### Lion:
 ```javascript
 function Lion(name){
 	this.name = name;	
@@ -165,6 +168,7 @@ function Lion(name){
 ```
 
 But we need to setup the inheritance:
+
 ```javascript 
 Lion.prototype = new Feline():
 ```
