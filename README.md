@@ -103,7 +103,7 @@ ______________________________________________________________________________
 * So now we can easily create a bunch of new animals in a single line. 
 * But looking at the Lion and Tiger constructor we see a lot of shared code. 
 
-![](http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/lion-mom-cub.jpg =400x225)
+<img src="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/lion-mom-cub.jpg" width="445">
 
 Lion:
 ```javascript
@@ -120,7 +120,8 @@ function Lion(name){
 	}
 }
 ```
-![](http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/tiger-mom-cub.jpg.adapt.945.1.jpg =472x275)
+<img src="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/tiger-mom-cub.jpg.adapt.945.1.jpg" width="445">
+
 Tiger:
 ```javascript
 function Tiger(name){
