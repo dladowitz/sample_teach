@@ -166,12 +166,12 @@ Lion.prototype = new Feline():
 Now all the properties on **Feline** are also on **Lion**
 
 <br><br>
-### [Cool, but lets see it for reals](https://repl.it/C2A9/5)
+### [Cool, but lets see it for reals](https://repl.it/C2A9/7)
 On in a live session
 
 
 
-### [And your turn again](https://repl.it/C2BN/2)
+### [And your turn again](https://repl.it/C2BN/6)
 Lets create an Animal and have Tigers and Owls inherit from them.
 
 
