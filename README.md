@@ -40,11 +40,11 @@ We could use objects like we've seen before:
 var simba = {
 	name: "Simba",
 	species: "Lion",
+	family: "Felidae",
 	dangerLevel: 9,	
-	type: "Mammal", 
 	numberOfLegs: 4,
 	carinvore: true,
-	tails: true,
+	tail: true,
 	feedingRoutine: function(){
 		console.log("20Lbs of beef, three times a day. Feed through fence.")
 	}
@@ -64,11 +64,11 @@ A Constructor for a Lion looks like this:
 function Lion(name){
 	this.name = name;	
 	this.species = "Lion";
+	this.family = "Felidae";
 	this.dangerLevel = 9;	
-	this.type = "Mammal"; 
 	this.numberOfLegs = 4;
 	this.carinvore = true;
-	this.tails = true;
+	this.tail = true;
 	this.feedingRoutine = function(){
 		console.log("20Lbs of beef, three times a day. Feed through fence.")
 	}
