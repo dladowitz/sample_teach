@@ -1,5 +1,5 @@
 # Objective: 
-> ## To understand Javascript Contsructors and Prototypal Inheritance
+> ## Understand Javascript Contsructors and Prototypal Inheritance
 	
 #### Constructors:
 > Allow us to QUICKLY create javascript Objects
@@ -37,12 +37,14 @@ ______________________________________________________________________________
 #### One Way
 We could use objects like we've seen before:
 ```javascript
-var Simba = {
+var simba = {
 	name: "Simba",
-	species: "Lion", 
+	species: "Lion",
 	dangerLevel: 9,	
-	nocturnal: false, 
+	type: "Mammal", 
 	numberOfLegs: 4,
+	carinvore: true,
+	tails: true,
 	feedingRoutine: function(){
 		console.log("20Lbs of beef, three times a day. Feed through fence.")
 	}
@@ -62,11 +64,13 @@ A Constructor for a Lion looks like this:
 function Lion(name){
 	this.name = name;	
 	this.species = "Lion";
-	this.dangerLevel = 9;
-	this.nocturnal = false;
+	this.dangerLevel = 9;	
+	this.type = "Mammal"; 
 	this.numberOfLegs = 4;
+	this.carinvore = true;
+	this.tails = true;
 	this.feedingRoutine = function(){
-		console.log("20Lbs of beef, three times a day. Feed through fence.");
+		console.log("20Lbs of beef, three times a day. Feed through fence.")
 	}
 }
 ```	
