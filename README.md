@@ -1,12 +1,11 @@
-# Constructors and Prototypal Inheritance
-## Objective: 
-> To understand Javascript Contsructors and Prototypal Inheritance
+# Objective: 
+> ## To understand Javascript Contsructors and Prototypal Inheritance
 	
-#### Constructor:
-> Allows us to QUICKLY create javascript Objects
+#### Constructors:
+> Allow us to QUICKLY create javascript Objects
 
-#### Prototypal Inheritance:
-> Allows us share share and reuse code between Objects
+#### Prototypal Inheritances:
+> Allow us share share and reuse code between Objects
 
 
 <br><br>
@@ -19,16 +18,20 @@ ______________________________________________________________________________
 * They recieve A LOT of animals. We need a way to quickly add more when they arrive.
 
 * First [lets check out a few of their awesome animals](https://www.youtube.com/tv#/watch?v=vfCmzyLp26s&feature=youtu.be&t=439), so we know what are are in for. 
-![](http://i.imgur.com/4wlZKb3.jpg)
+[![](http://i.imgur.com/4wlZKb3.jpg)](https://www.youtube.com/tv#/watch?v=vfCmzyLp26s&feature=youtu.be&t=439)
+
 
 * PS, I'm pretty sure this guy is gonna die soon. 
 
 <br><br>
 ______________________________________________________________________________
 ## What we need to model:
-* 12 Lions
-* 15 Tigers
-* 2 House Cats
+* 30 Lions
+* 25 Tigers
+* 28 Jaguars
+* 20 Lepards
+* 10 House Cats
+* 20 Dogs
 * 2 Owls
 
 #### One Way
