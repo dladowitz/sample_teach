@@ -86,12 +86,12 @@ console.log( simba.name ) //Output -> "Simba"
 console.log( leo.dangerLevel ) //Output -> 9
 ```
 <br><br>
-### [So lets see a live demo](https://repl.it/C16y/1)
-[![](http://cdn.churchm.ag/wp-content/uploads/2011/10/replit-edit-620x431.png)](https://repl.it/C16y/1)
+### [So lets see a live demo](https://repl.it/C16y/5)
+[![](http://cdn.churchm.ag/wp-content/uploads/2011/10/replit-edit-620x431.png)](https://repl.it/C16y/5)
 
 <br><br>
 
-### [Your Turn](https://repl.it/C1xn/5)
+### [Your Turn](https://repl.it/C1xn/10)
 
 
 Follow the link and create a Constructor for a Tiger and Owl.
