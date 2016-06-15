@@ -103,8 +103,8 @@ ______________________________________________________________________________
 * So now we can easily create a bunch of new animals in a single line. 
 * But looking at the Lion and Tiger constructor we see a lot of shared code. 
 
-Lion:
-<img src="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/lion-mom-cub.jpg" width="445">
+### Lion:
+<img src="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/lion-mom-cub.jpg" width="350">
 
 ```javascript
 function Lion(name){
@@ -121,8 +121,8 @@ function Lion(name){
 }
 ```
 <br>
-Tiger:
-<img src="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/tiger-mom-cub.jpg.adapt.945.1.jpg" width="445">
+### Tiger:
+<img src="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/tiger-mom-cub.jpg.adapt.945.1.jpg" width="350">
 
 ```javascript
 function Tiger(name){
@@ -140,8 +140,10 @@ function Tiger(name){
 ```
 
 ### A Lion and Tiger can inhert properties of a Feline.  
+<br>
+### Feline:
+<img src="http://2.bp.blogspot.com/-0VeZpoXrHuw/Tl2vI-ov1WI/AAAAAAAAADU/Iwci0QtQBFc/s1600/Greenlandic+felidae.jpg" width="350">
 
-Feline:
 ```javascript
 function Feline(){
 	this.family = "Felidae";
