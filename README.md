@@ -2,7 +2,7 @@
 > ## Understand Javascript Contsructors and Prototype Inheritance
 
 #### Constructors:
-> Are Blueprints that allow us to QUICKLY create javascript Objects
+> Are blueprints that allow us to QUICKLY create javascript Objects
 
 #### Prototype Inheritance:
 > Allow us share share and reuse code between Objects
@@ -15,7 +15,7 @@ ______________________________________________________________________________
 #### We have a client with an [Animal Santuary](http://blackjaguarwhitetiger.org/visit-us/).
 * They want us to build software to keep track of the animals.  
 
-* They recieve A LOT of animals. We need a way to quickly add more when they arrive.
+* They receive A LOT of animals. We need a way to quickly add more when they arrive.
 
 * First <a href="https://www.youtube.com/tv#/watch?v=vfCmzyLp26s&feature=youtu.be&t=439" target="_blank">lets check out a few of their awesome animals</a>, so we know what are are in for.
 [![](http://i.imgur.com/4wlZKb3.jpg)](https://www.youtube.com/tv#/watch?v=vfCmzyLp26s&feature=youtu.be&t=439)
