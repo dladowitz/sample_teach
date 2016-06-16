@@ -184,4 +184,13 @@ On in a live session
 ### [And your turn again](https://repl.it/C2BN/6)
 Lets create an Animal and have Tigers and Owls inherit from them.
 
+<script>
+    var links = document.querySelectorAll( 'a' );  
+    for (var i = 0, length = links.length; i < length; i++) {  
+        if (links[i].hostname != window.location.hostname) {
+            links[i].target = '_blank';
+        }
+    }
+</script>
+
 
