@@ -17,7 +17,7 @@ ______________________________________________________________________________
 
 * They recieve A LOT of animals. We need a way to quickly add more when they arrive.
 
-* First [lets check out a few of their awesome animals](https://www.youtube.com/tv#/watch?v=vfCmzyLp26s&feature=youtu.be&t=439), so we know what are are in for. 
+* First <a target="_blank" href="https://www.youtube.com/tv#/watch?v=vfCmzyLp26s&feature=youtu.be&t=439">lets check out a few of their awesome animals</a>, so we know what are are in for. 
 [![](http://i.imgur.com/4wlZKb3.jpg)](https://www.youtube.com/tv#/watch?v=vfCmzyLp26s&feature=youtu.be&t=439)
 
 
@@ -107,7 +107,7 @@ ______________________________________________________________________________
 * But looking at the Lion and Tiger constructor we see a lot of shared code. 
 
 ### Lion:
-<img src="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/lion-mom-cub.jpg" width="350">
+<img src="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/lion-mom-cub.jpg" width="250">
 
 ```javascript
 function Lion(name){
@@ -125,7 +125,7 @@ function Lion(name){
 ```
 <br>
 ### Tiger:
-<img src="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/tiger-mom-cub.jpg.adapt.945.1.jpg" width="350">
+<img src="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/tiger-mom-cub.jpg.adapt.945.1.jpg" width="250">
 
 ```javascript
 function Tiger(name){
