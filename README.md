@@ -17,7 +17,7 @@ ______________________________________________________________________________
 
 * They recieve A LOT of animals. We need a way to quickly add more when they arrive.
 
-* First <a target="_blank" href="https://www.youtube.com/tv#/watch?v=vfCmzyLp26s&feature=youtu.be&t=439">lets check out a few of their awesome animals</a>, so we know what are are in for. 
+* First <a href="https://www.youtube.com/tv#/watch?v=vfCmzyLp26s&feature=youtu.be&t=439" target="_blank">lets check out a few of their awesome animals</a>, so we know what are are in for. 
 [![](http://i.imgur.com/4wlZKb3.jpg)](https://www.youtube.com/tv#/watch?v=vfCmzyLp26s&feature=youtu.be&t=439)
 
 
