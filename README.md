@@ -1,10 +1,10 @@
 # Objective: 
-> ## Understand Javascript Contsructors and Prototypal Inheritance
+> ## Understand Javascript Contsructors and Prototype Inheritance
 	
 #### Constructors:
 > Allow us to QUICKLY create javascript Objects
 
-#### Prototypal Inheritances:
+#### Prototype Inheritance:
 > Allow us share share and reuse code between Objects
 
 
