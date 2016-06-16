@@ -183,3 +183,11 @@ On in a live session
 
 ### [And your turn again](https://repl.it/C2BN/6)
 Lets create an Animal and have Tigers and Owls inherit from them.
+
+<br><br><br>
+## We did it!
+<br><br><br>
+
+Go <a href="https://www.youtube.com/user/blackjaguarandtiger">watch some tiger videos</a> when you need inspiration:
+
+<a href="https://www.youtube.com/user/blackjaguarandtiger"><img src="http://www.hercampus.com/sites/default/files/styles/full_width_embed/public/2015/01/17/10505308_282647801936556_6126636967148659429_n.jpg" width="350"></a>
