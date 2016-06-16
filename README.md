@@ -1,8 +1,8 @@
-# Objective: 
+# Objective:
 > ## Understand Javascript Contsructors and Prototype Inheritance
-	
+
 #### Constructors:
-> Allow us to QUICKLY create javascript Objects
+> Are Blueprints that allow us to QUICKLY create javascript Objects
 
 #### Prototype Inheritance:
 > Allow us share share and reuse code between Objects
@@ -12,16 +12,16 @@
 ______________________________________________________________________________
 ##	 What are we building:
 
-#### We have a client with an [Animal Santuary](http://blackjaguarwhitetiger.org/visit-us/). 
+#### We have a client with an [Animal Santuary](http://blackjaguarwhitetiger.org/visit-us/).
 * They want us to build software to keep track of the animals.  
 
 * They recieve A LOT of animals. We need a way to quickly add more when they arrive.
 
-* First <a href="https://www.youtube.com/tv#/watch?v=vfCmzyLp26s&feature=youtu.be&t=439" target="_blank">lets check out a few of their awesome animals</a>, so we know what are are in for. 
+* First <a href="https://www.youtube.com/tv#/watch?v=vfCmzyLp26s&feature=youtu.be&t=439" target="_blank">lets check out a few of their awesome animals</a>, so we know what are are in for.
 [![](http://i.imgur.com/4wlZKb3.jpg)](https://www.youtube.com/tv#/watch?v=vfCmzyLp26s&feature=youtu.be&t=439)
 
 
-* PS, I'm pretty sure this guy is gonna die soon. 
+* PS, I'm pretty sure this guy is gonna die soon.
 
 <br><br>
 ______________________________________________________________________________
@@ -42,7 +42,7 @@ var simba = {
 	name: "Simba",
 	species: "Lion",
 	family: "Felidae",
-	dangerLevel: 9,	
+	dangerLevel: 9,
 	numberOfLegs: 4,
 	carinvore: true,
 	tail: true,
@@ -50,23 +50,23 @@ var simba = {
 		console.log("20Lbs of beef, three times a day. Feed through fence.")
 	}
 }
-```	
+```
 
-* But...... thats gonna get really crazy when we have dozens or hundreds of animals to create and maintain. 
+* But...... thats gonna get really crazy when we have dozens or hundreds of animals to create and maintain.
 
 <br><br>
 ______________________________________________________________________________
 ## Another Way: Constructors.
-Constructors let us create  blueprint for a type of object (here an animal). We can then use the blue print over and over again. 
+Constructors let us create  blueprint for a type of object (here an animal). We can then use the blue print over and over again.
 
 A Constructor for a Lion looks like this:
 
 ```javascript
 function Lion(name){
-	this.name = name;	
+	this.name = name;
 	this.species = "Lion";
 	this.family = "Felidae";
-	this.dangerLevel = 9;	
+	this.dangerLevel = 9;
 	this.numberOfLegs = 4;
 	this.carinvore = true;
 	this.tail = true;
@@ -74,7 +74,7 @@ function Lion(name){
 		console.log("20Lbs of beef, three times a day. Feed through fence.")
 	}
 }
-```	
+```
 
 Then if we want to create a few Lions quickly we can do it in one line:
 
@@ -103,18 +103,18 @@ Follow the link and create a Constructor for a Tiger.
 ______________________________________________________________________________
 ## DRY it up with Inheritance:
 
-* So now we can easily create a bunch of new animals in a single line. 
-* But looking at the Lion and Tiger constructor we see a lot of shared code. 
+* So now we can easily create a bunch of new animals in a single line.
+* But looking at the Lion and Tiger constructor we see a lot of shared code.
 
 ### Lion:
 <img src="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/lion-mom-cub.jpg" width="250">
 
 ```javascript
 function Lion(name){
-	this.name = name;	
+	this.name = name;
 	this.species = "Lion";
 	this.family = "Felidae";
-	this.dangerLevel = 9;	
+	this.dangerLevel = 9;
 	this.numberOfLegs = 4;
 	this.carinvore = true;
 	this.tail = true;
@@ -129,10 +129,10 @@ function Lion(name){
 
 ```javascript
 function Tiger(name){
-	this.name = name;	
+	this.name = name;
 	this.species = "Tiger";
 	this.family = "Felidae";
-	this.dangerLevel = 8;	
+	this.dangerLevel = 8;
 	this.numberOfLegs = 4;
 	this.carinvore = true;
 	this.tail = true;
@@ -158,7 +158,7 @@ function Feline(){
 ### Lion:
 ```javascript
 function Lion(name){
-	this.name = name;	
+	this.name = name;
 	this.species = "Lion";
 	this.dangerLevel = 9;
 	this.feedingRoutine = function(){
@@ -169,7 +169,7 @@ function Lion(name){
 
 But we need to setup the inheritance:
 
-```javascript 
+```javascript
 Lion.prototype = new Feline():
 ```
 
@@ -183,5 +183,3 @@ On in a live session
 
 ### [And your turn again](https://repl.it/C2BN/6)
 Lets create an Animal and have Tigers and Owls inherit from them.
-
-
